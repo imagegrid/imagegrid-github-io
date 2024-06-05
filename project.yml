@@ -1,0 +1,29 @@
+parameters: {}
+environment:
+    SUPABASE_URL: '${SUPABASE_URL}'
+    SUPABASE_SERVICE_ROLE_KEY: '${SUPABASE_SERVICE_ROLE_KEY}'
+packages:
+  - name: bookQuotes
+    functions:
+      - name: getQuotes
+        binary: false
+        runtime: nodejs:18
+        web: true
+        webSecure: false
+        limits:
+            timeout: 30000
+      - name: getRandomQuote
+        binary: false
+        runtime: nodejs:18
+        web: true
+        webSecure: false
+        limits:
+            timeout: 30000
+      - name: scrapeQuotes
+        binary: false
+        runtime: nodejs:18
+        web: true
+        webSecure: false
+        limits:
+            timeout: 30000
+                

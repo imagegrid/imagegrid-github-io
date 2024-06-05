@@ -1,0 +1,11 @@
+services:
+    node:
+        build: .
+        ports:
+            - '3000:3000'
+        volumes:
+            - .:/usr/app
+            - node-modules:/usr/app/node_modules
+volumes:
+    node-modules:
+        driver: local
