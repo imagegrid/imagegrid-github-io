@@ -27,4 +27,4 @@ dist-ssr
 .deployed
 __deployer__.zip
 __pycache__/
-package-lock.json
+lib/package-lock.json
